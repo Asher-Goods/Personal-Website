@@ -1,8 +1,4 @@
 
-html {
-	border: .5em solid #ddd;
-}
-
 body {
 	margin: 0;
 	padding: 0;
@@ -11,7 +7,8 @@ body {
 	background-color: #333;
 }
 
-html,body {
+html,
+body {
 	min-height: 100%;
 	box-sizing: border-box;
 }
@@ -68,8 +65,20 @@ footer {
 	padding-bottom: 4em;
 }
 
+.container_navbar {
+	min-height: 100%;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+.container_navbar li{
+	float: left;
+}
 
-
+.bar {
+	height: .2em;
+	background-color: #ddd;
+	margin: 1em auto;
+}
 
 
 .projects-grid {
@@ -78,25 +87,40 @@ footer {
 	grid-gap: 1em;
 	margin: 1em auto;
 	max-width: 80%;
-	}
-	
-	.project-box {
-	background-color: #eee;
+}
+
+.project-box {
+	background-color: #333;
 	border-radius: 5px;
 	padding: 1em;
 	text-align: center;
-	}
-	
-	.project-box h2 {
+}
+
+.project-box h2 {
 	margin-bottom: 0.5em;
-	}
-	
-	header {
+}
+
+.project-box img {
+	border: .3em solid #ddd;
+	padding: .25em;
+	height: 10em;
+	width: 10em;
+}
+
+.project-box a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+
+
+
+header {
 	text-align: center;
 	margin: 1em;
-	}
-	
-	footer {
+}
+
+footer {
 	background-color: #333;
 	color: #fff;
 	padding: 10px;
@@ -104,4 +128,4 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	}
+}
