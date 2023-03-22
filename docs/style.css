@@ -8,9 +8,22 @@
 body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
-	background-color: #333;
 	min-width: 305px;
+	margin: 0;
+
+	
 }
+
+html{
+	background: url(background.svg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	height: 100%;
+}
+
 
 
 header {
@@ -34,7 +47,7 @@ nav ul {
 
 nav li {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: auto;
 }
 /* ********************************** */
 
@@ -56,11 +69,12 @@ nav a.button:hover {
 /* ********************************** */
 
 footer {
-	background-color: #333;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
 }
+
+/* ********************************** */
 
 .h1spacer {
 	margin-bottom: 1.5em;
@@ -71,10 +85,12 @@ footer {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .container_item{
-	height: 15em;
+	height: 5em;
 	width: 15em;
 }
 
