@@ -10,18 +10,17 @@ body {
 	font-size: 16px;
 	min-width: 305px;
 	margin: 0;
-
-	
+	color: #fff;
 }
 
 html{
-	background: url(background.svg) no-repeat center center fixed; 
+	background: url(background.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	overflow: hidden;
 	height: 100%;
+	background-attachment: fixed;
 }
 
 
@@ -94,6 +93,11 @@ footer {
 	width: 15em;
 }
 
+.container_textbox{
+	width: auto;
+	height: 5em;	
+}
+
 /* ********************************** */
 
 .bar {
@@ -127,7 +131,6 @@ footer {
     flex-direction: row;
 	
 
-	background-color: #333;
 	border-radius: 5px;
 	padding: 1em;
 }
