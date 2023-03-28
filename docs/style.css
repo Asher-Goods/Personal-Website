@@ -314,12 +314,17 @@ header {
 		width: 15em;
 	}
 
+	.container_box{
+		flex-direction: column;
+		align-items: center;
+	}
+
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 	html {
-		zoom: 130%;
+		zoom: 120%;
 	}
 
 	.container_headshot img {
@@ -329,7 +334,7 @@ header {
 	}
 
 	.container_aboutbox {
-		width: 23em;
+		width: 20em;
 		height: 16em;
 		border: .2em solid #ddd;
 	}
