@@ -1,21 +1,21 @@
 /* Importing fonts */
 @font-face {
 	font-family: 'Roboto';
-	src: url('Roboto-Light-webfont.woff') format('woff');
+	src: url('Font/Roboto-Light-webfont.woff') format('woff');
 	font-style: normal;
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'Roboto';
-	src: url('Roboto-LightItalic-webfont.woff') format('woff');
+	src: url('Font/Roboto-LightItalic-webfont.woff') format('woff');
 	font-style: italic;
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: 'Roboto';
-	src: url('Roboto-Bold-webfont.woff') format('woff');
+	src: url('Font/Roboto-Bold-webfont.woff') format('woff');
 	font-style: normal;
 	font-weight: 700;
 }
@@ -38,7 +38,7 @@ body {
 }
 
 html {
-	background: url(background.png) no-repeat center center fixed;
+	background: url(Images/background.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -140,6 +140,8 @@ footer {
 	border: 2px solid #ddd;
 	justify-content: center;
 	align-items: center;
+	padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 .container_textbox h3 {
@@ -200,6 +202,11 @@ footer {
 	flex-direction: row;
 	align-items: center;
 }
+
+.container_navbar li{
+	margin-left: .5em;
+	margin-right: .5em;
+	}
 
 /* ********************************** */
 
@@ -271,6 +278,9 @@ header {
 /* styles depending on device */
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+	html{
+		zoom: 110%;
+	}
 	p {
 		font-size: 10px;
 	}
