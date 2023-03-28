@@ -142,6 +142,7 @@ footer {
 	align-items: center;
 	padding-left: 1.5em;
     padding-right: 1.5em;
+	margin: 2em;
 }
 
 .container_textbox h3 {
@@ -318,7 +319,7 @@ header {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 	html {
-		zoom: 110%;
+		zoom: 130%;
 	}
 
 	.container_headshot img {
