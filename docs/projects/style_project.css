@@ -2,11 +2,15 @@
 	display: flex;
     width: 45em;
 	flex-direction: column;
-    /* align-items: center; */
 	justify-content: center;
-	padding-left: 1.5em;
-    padding-right: 1.5em;
+	padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    padding-top: 1.5em;
 	margin: 2em;
+    background-color: #4e4b4b;
+    border-color: #ddd;
+    border: solid .25em;
 }
 
 .container_step h2{
@@ -23,4 +27,83 @@
 
 .container_step li{
     margin-bottom: .25em;
+}
+
+.sticky{
+    background: #4e4b4b;
+
+
+    height: 12rem;
+    width: 8rem;
+    flex-basis: 300px;
+    flex-grow: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 5rem;
+    right: 5rem;
+    
+    position: sticky;
+    position: webkit-sticky; 
+
+    margin-left: 1.5em;
+    margin-top: 2em;
+    border: solid #ddd;
+
+    padding: .5em;
+}
+
+.sticky a{
+    color:#fff;
+    text-decoration: underline;
+}
+
+.sticky ul{
+    list-style-type: none;
+    justify-content: center;
+}
+
+.invis{
+
+    height: 20rem;
+    width: 8rem;
+    flex-basis:300px;
+    flex-grow:1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top:5rem;
+    left:5rem;
+
+    position: sticky;
+
+    margin-right: 1.5em;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+
+/* styles depending on device */
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
 }

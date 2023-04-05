@@ -9,60 +9,94 @@
 </head>
 
 <body>
-    <!-- Site Navigation -->
-    <header>
-        <h1 class="main_header">Rock Paper Scissors</h1>
-        <nav class="container_navbar">
-            <ul>
-                <li><a href="../index.html" class="button">Home</a></li>
-                <li><a href="../about.html" class="button">About</a></li>
-                <li><a href="../courses.html" class="button">Courses</a></li>
-                <li><a href="../projects.html" class="button">Projects</a></li>
-            </ul>
-        </nav>
-        <div class="bar"></div>
-    </header>
+        <!-- Site Navigation -->
+        <header>
+            <h1 class="main_header">Rock Paper Scissors</h1>
+            <nav class="container_navbar">
+                <ul>
+                    <li><a href="../index.html" class="button">Home</a></li>
+                    <li><a href="../about.html" class="button">About</a></li>
+                    <li><a href="../courses.html" class="button">Courses</a></li>
+                    <li><a href="../projects.html" class="button">Projects</a></li>
+                </ul>
+            </nav>
+            <div class="bar"></div>
+        </header>
 
-    <div class="container_box">
-        <div class="container_step">
-            <h2>Goal</h3>
-            <h3>Create the game rock paper scissors with the following features:</h3>
-            <ul>
-                <li>A mechanism for allowing two players to simultaneously represent their input selection</li>
-                <li>Visual indication of the winner immediately after inputs are selected</li>
-                <li>Visual indication of when one of the two players makes an invalid selection (i.e. an input that does not
-                    represent Rock,Paper or Scissors)</li>
-                <li>Visual indication of a tie</li>
-            </ul>
 
-            <h3>Technical Requirements</h3>
-            <ul>
-                <li>Two SPST momentary pushbuttons must be used to represent the first player’s input (A1,A0).</li>
-                <li>Two SPST momentary pushbuttons must be used to represent the second player’s input (B1,B0)</li>
-                <li>An LED must illuminate when the first player’s input selection beats the second player’s selection (WA)</li>
-                <li>An LED must illuminate when the second player’s input selection beats the first player’s selection (WB)</li>
-                <li>An LED (E) must be illuminate whenever either player selects an input other than Rock, Paper or Scissors.</li>
-                <li>Whenever the E LED is illuminated, the states of theWA andWB LEDs does not matter and can be ignored.</li>
-                <li>The final device should operate off of an 5V DC power supply.</li>
-            </ul>
+
+
+        <!-- Main information-->
+        <div class="wrapper">
+
+            <aside class="invis"></aside>
+
+            <div class="container_box">
+                <div class="container_step">
+                    <h2 id="Goal">Goal</h2>
+                    <h3>Create the game rock paper scissors with the following features:</h3>
+                    <ul>
+                        <li>A mechanism for allowing two players to simultaneously represent their input selection</li>
+                        <li>Visual indication of the winner immediately after inputs are selected</li>
+                        <li>Visual indication of when one of the two players makes an invalid selection (i.e. an input
+                            that does not
+                            represent Rock,Paper or Scissors)</li>
+                        <li>Visual indication of a tie</li>
+                    </ul>
+
+                    <h3>Technical Requirements</h3>
+                    <ul>
+                        <li>Two SPST momentary pushbuttons must be used to represent the first player’s input (A1,A0).
+                        </li>
+                        <li>Two SPST momentary pushbuttons must be used to represent the second player’s input (B1,B0)
+                        </li>
+                        <li>An LED must illuminate when the first player’s input selection beats the second player’s
+                            selection (WA)</li>
+                        <li>An LED must illuminate when the second player’s input selection beats the first player’s
+                            selection (WB)</li>
+                        <li>An LED (E) must be illuminate whenever either player selects an input other than Rock, Paper
+                            or Scissors.</li>
+                        <li>Whenever the E LED is illuminated, the states of theWA andWB LEDs does not matter and can be
+                            ignored.</li>
+                        <li>The final device should operate off of an 5V DC power supply.</li>
+                    </ul>
+                </div>
+
+                <div class="container_step">
+                    <h2 id="Process">Process</h2>
+                    <h3>Create a logic abstraction</h3>
+                    <ul>
+                        <li>A1 = Rock | A0 = Paper | A1A0 = Scissors</li>
+                        <li>B1 = Rock | B0 = Paper | B1B0 = Scissors</li>
+                    </ul>
+                </div>
+
+                <div class="container_step">
+                    <h2 id="Final">Final Result</h2>
+                    <ul>
+                        <li>Here I would show the final result of the project</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Page Navigation -->
+            <aside class="sticky">
+                <ul>
+                    <li><a href="#Goal">
+                        <h3>Goal</h3>
+                    </a></li>
+                    <li><a href="#Process">
+                        <h3>Process</h3>
+                    </a></li>
+                    <li><a href="#Final">
+                        <h3>Final Result</h3>
+                    </a></li>
+
+                </ul>
+            </aside>
+
         </div>
 
-        <div class="container_step">
-            <h2>Process</h2>
-            <h3>Create a logic abstraction</h3>
-            <ul>
-            <li>A1 = Rock   |   A0 = Paper   |   A1A0 = Scissors</li>
-            <li>B1 = Rock   |   B0 = Paper   |   B1B0 = Scissors</li>
-        </ul>
-        </div>
-
-        <div class="container_step">
-            <h2>Final Result</h2>
-            <ul>
-                <li>Here I would show the final result of the project</li>
-            </ul>
-        </div>
-    </div>
 
 
     <footer>
