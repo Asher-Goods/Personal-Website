@@ -147,7 +147,7 @@ footer {
 
 .container_textbox h3 {
 	margin-bottom: 1em;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .container_headshot {
@@ -166,19 +166,25 @@ footer {
 
 .container_aboutbox {
 
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	width: 15em;
 	height: 8em;
-	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	background-color: #4e4b4b;
 	padding: .5em;
 	border: .1em solid #ddd;
 	margin-bottom: 1em;
 
+}
+
+.logo{
+	width: 3em;
+	height: 3em;
+	justify-content: center;
+	align-self:center;	
 }
 
 
@@ -205,6 +211,10 @@ footer {
 }
 
 .container_navbar li{
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; */
 	margin-left: .5em;
 	margin-right: .5em;
 	}

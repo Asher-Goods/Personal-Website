@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Courses - Asher's Engineering Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
-
-    <style>
-        .container_textbox{
-            border: none;
-            width: 28em;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style_project.css">
 </head>
 
 <body>
@@ -30,26 +24,40 @@
     </header>
 
     <div class="container_box">
-        <div class="container_textbox">
-            <h3>Goal</h3>
+        <div class="container_step">
+            <h2>Goal</h3>
+            <h3>Create the game rock paper scissors with the following features:</h3>
             <ul>
-                <li>Requirement 1</li>
-                <li>Requirement 2</li>
-                <li>Requirement 3</li>
-                <li>Requirement 4</li>
+                <li>A mechanism for allowing two players to simultaneously represent their input selection</li>
+                <li>Visual indication of the winner immediately after inputs are selected</li>
+                <li>Visual indication of when one of the two players makes an invalid selection (i.e. an input that does not
+                    represent Rock,Paper or Scissors)</li>
+                <li>Visual indication of a tie</li>
+            </ul>
+
+            <h3>Technical Requirements</h3>
+            <ul>
+                <li>Two SPST momentary pushbuttons must be used to represent the first player’s input (A1,A0).</li>
+                <li>Two SPST momentary pushbuttons must be used to represent the second player’s input (B1,B0)</li>
+                <li>An LED must illuminate when the first player’s input selection beats the second player’s selection (WA)</li>
+                <li>An LED must illuminate when the second player’s input selection beats the first player’s selection (WB)</li>
+                <li>An LED (E) must be illuminate whenever either player selects an input other than Rock, Paper or Scissors.</li>
+                <li>Whenever the E LED is illuminated, the states of theWA andWB LEDs does not matter and can be ignored.</li>
+                <li>The final device should operate off of an 5V DC power supply.</li>
             </ul>
         </div>
 
-        <div class="container_textbox">
-            <h3>Process</h3>
+        <div class="container_step">
+            <h2>Process</h2>
+            <h3>Create a logic abstraction</h3>
             <ul>
-                <li>Here I would go into detail for each part of the process</li>
-                <li>There would be pictures included to explain the project</li>
-            </ul>
+            <li>A1 = Rock   |   A0 = Paper   |   A1A0 = Scissors</li>
+            <li>B1 = Rock   |   B0 = Paper   |   B1B0 = Scissors</li>
+        </ul>
         </div>
 
-        <div class="container_textbox">
-            <h3>Final Result</h3>
+        <div class="container_step">
+            <h2>Final Result</h2>
             <ul>
                 <li>Here I would show the final result of the project</li>
             </ul>
