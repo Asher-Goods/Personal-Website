@@ -1,35 +1,36 @@
-.container_step{
-	display: flex;
+.container_step {
+    display: flex;
     width: 45em;
-	flex-direction: column;
-	justify-content: center;
-	padding-left: 3em;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 3em;
     padding-top: 1.5em;
-	margin: 2em;
+    margin: 2em;
     background-color: #4e4b4b;
     border-color: #ddd;
     border: solid .25em;
 }
 
-.container_step h2{
+.container_step h2 {
     display: flex;
     align-self: center;
     text-decoration: underline;
-   
+
 }
 
-.container_step h2,h3{
+.container_step h2,
+h3 {
     margin-bottom: .5em;
     margin-top: .5em;
 }
 
-.container_step li{
+.container_step li {
     margin-bottom: .25em;
 }
 
-.sticky{
+.sticky {
     background: #4e4b4b;
 
 
@@ -37,16 +38,16 @@
     width: 8rem;
     flex-basis: 300px;
     flex-grow: 1;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     top: 5rem;
     right: 5rem;
-    
+
     position: sticky;
-    position: webkit-sticky; 
+    position: webkit-sticky;
 
     margin-left: 1.5em;
     margin-top: 2em;
@@ -55,55 +56,68 @@
     padding: .5em;
 }
 
-.sticky a{
-    color:#fff;
+.sticky a {
+    color: #fff;
     text-decoration: underline;
 }
 
-.sticky ul{
+.sticky ul {
     list-style-type: none;
     justify-content: center;
 }
 
-.invis{
+.invis {
 
     height: 20rem;
     width: 8rem;
-    flex-basis:300px;
-    flex-grow:1;
+    flex-basis: 300px;
+    flex-grow: 1;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    top:5rem;
-    left:5rem;
+    top: 5rem;
+    left: 5rem;
 
     position: sticky;
 
     margin-right: 1.5em;
 }
 
-.wrapper{
+.wrapper {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
-
-/* styles depending on device */
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-
-}
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
 
+    .wrapper {
+        flex-direction: column-reverse;
+    }
 
-}
+    .container_step {
+        width: auto;
+    }
 
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
+    .invis {
+        height: 1px;
+        width: 1px;
+        flex-basis: 1px;
+    }
+
+    .sticky{
+        flex-basis: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        width:50%;
+        height:auto;
+        margin: auto;
+        position:unset;
+        text-align:center;
+    }
 
 
 }
