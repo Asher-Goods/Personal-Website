@@ -1,0 +1,11 @@
+03/16:
+Navigation and Main webpage
+Started main web page, struggling with borders
+
+03/23:
+Get started on about and courses page
+Layed out the basic formatting and also fixed the background image
+
+03/30:
+Work on individual project pages and general spacing
+Fixed spacing, started hashing out the information in the rock paper scissors project
