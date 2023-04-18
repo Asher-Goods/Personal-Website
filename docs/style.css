@@ -129,20 +129,22 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
+	margin: 0 auto;
+	max-width: 60em;
 
 }
 
 .container_textbox {
 	display: flex;
-	width: 25em;
+	width: 21em;
 	height: 13em;
 	flex-direction: column;
 	border: 2px solid #ddd;
 	justify-content: center;
-	align-items: center;
+	align-items: left;
 	padding-left: 1.5em;
     padding-right: 1.5em;
-	margin: 2em;
+	margin: .5em;
 }
 
 .container_textbox h3 {
@@ -160,8 +162,8 @@ footer {
 .container_headshot img {
 	border: .1em solid #ddd;
 	padding: .25em;
-	height: 8em;
-	width: 10em;
+	height: 10em;
+	width: 8em;
 }
 
 .container_aboutbox {
@@ -178,6 +180,16 @@ footer {
 	border: .1em solid #ddd;
 	margin-bottom: 1em;
 
+}
+
+.container_contactbox {
+	margin-left: 3em;
+	margin-right: 3em;
+	margin-bottom: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .logo{
@@ -315,19 +327,19 @@ header {
 		font-size: 10px;
 	}
 
-	.container_box {
-		margin-left: .5em;
-		margin-right: .5em;
-	}
-
 	.container_textbox {
 		width: 15em;
+		height: 10em;
+		margin: .5em;
 	}
 
 	.container_box{
-		flex-direction: column;
+		flex-direction:row;
 		align-items: center;
 		width:auto;
+		margin-left: .5em;
+		margin-right: .5em;
+		flex-wrap: wrap;
 	}
 
 
@@ -341,8 +353,8 @@ header {
 
 	.container_headshot img {
 		border: .2em solid #ddd;
-		height: 16em;
-		width: 20em;
+		height: 20em;
+		width: 16em;
 	}
 
 	.container_aboutbox {
