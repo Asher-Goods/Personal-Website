@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RPS - Asher's Engineering Portfolio</title>
+    <title>2-Bit Mult - Asher's Engineering Portfolio</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
     <link rel="stylesheet" type="text/css" href="style_project.css">
 </head>
@@ -11,7 +11,7 @@
 <body>
         <!-- Site Navigation -->
         <header>
-            <h1 id = "Page_Top" class="main_header">Rock Paper Scissors</h1>
+            <h1 id = "Page_Top" class="main_header">2-Bit Multiplier</h1>
             <nav class="container_navbar">
                 <ul>
                     <li><a href="../index.html" class="button">Home</a></li>
@@ -34,42 +34,31 @@
             <div class="container_box">
                 <div class="container_step">
                     <h2 id="Goal">Goal</h2>
-                    <h3>Create the game rock paper scissors with the following features:</h3>
+                    <h3>Create a two bit multiplier using the following features:</h3>
                     <ul>
-                        <li>A mechanism for allowing two players to simultaneously represent their input selection</li>
-                        <li>Visual indication of the winner immediately after inputs are selected</li>
-                        <li>Visual indication of when one of the two players makes an invalid selection (i.e. an input
-                            that does not
-                            represent Rock,Paper or Scissors)</li>
-                        <li>Visual indication of a tie</li>
+                        <li>Two two bit binary number inputs</li>
+                        <li>Visual indication of the product in binary using LEDS</li>
+                        <li>Use as few gates as possible, minimizing cost</li>
+                        <li>Determine logic expressions for P3, P2, P1, P0</li>
                     </ul>
 
                     <h3>Technical Requirements</h3>
                     <ul>
-                        <li>Two SPST momentary pushbuttons must be used to represent the first player’s input (A1,A0).
+                        <li>Input for A0, A1, B0, and B1 uses a singular dip switch
                         </li>
-                        <li>Two SPST momentary pushbuttons must be used to represent the second player’s input (B1,B0)
+                        <li>Result is displayed through an LED for each bit (P3,P2,P1,P0)
                         </li>
-                        <li>An LED must illuminate when the first player’s input selection beats the second player’s
-                            selection (WA)</li>
-                        <li>An LED must illuminate when the second player’s input selection beats the first player’s
-                            selection (WB)</li>
-                        <li>An LED (E) must be illuminate whenever either player selects an input other than Rock, Paper
-                            or Scissors.</li>
-                        <li>Whenever the E LED is illuminated, the states of theWA andWB LEDs does not matter and can be
-                            ignored.</li>
-                        <li>The final device should operate off of an 5V DC power supply.</li>
+                        <li>Use 7400-Series logic chips</li>
                     </ul>
                 </div>
 
                 <div class="container_step">
                     <h2 id="Takeaways">Takeaways</h2>
                     <ul>
-                        <li>Creating logic abstractions</li>
-                        <li>Minimization of sum of products using Karnaugh Maps</li>
-                        <li>Minimization of circuit cost by using the least amount of chips </li>
-                        <li>Implementation of designed circuit onto a breadboard using the supplies above</li>
-
+                        <li>Translate a high-level description of a function to a Boolean logic truth table</li>
+                        <li>Synthesize a digital circuit that represents the logic described in a truth table</li>
+                        <li>Prototype and test logic circuits using 7400-series integrated circuits</li>
+                        <li>Implementation of dip switches and use of pull-down resistors</li>
                     </ul>
                 </div>
 
